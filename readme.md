@@ -154,4 +154,4 @@ So we have a final target now, the project can be fully specified, because I wro
 
 ## Extrapolating to Agentic Workflows?
 
-I've experimented with them. Sometimes with success! Othertimes with what feels like several of these interactions compounded with some clean up along the way. I wouldn't claim these experiments directly translate or exponentially propagates the negative aspects of using these tools. Though I do wonder if the propagation of negative traits is at least linear? Or perhaps quadratic? It's hard to quantify, and I won't bother here, this is long enough. I would invite others to try similar experiments for themselves though.
+I've experimented with them. Sometimes with success! Other times it felt more like several of these interactions compounding with some clean up along the way. I wouldn't claim these experiments directly translate or exponentially propagates the negative aspects of using these tools. Though I do wonder if the propagation of negative traits is at least linear? Or perhaps quadratic? It's hard to quantify, and I won't bother here, this is long enough. I would invite others to try similar experiments for themselves though.
