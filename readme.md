@@ -1,4 +1,4 @@
-# Tradeoffs in a Single LLM Interactions for Writing Code
+# Tradeoffs in a Single LLM Interaction
 
 Over the past year I have seen an extreme fixation with AI productivity, but I haven't seen compelling experiments about their trade offs. I think its because it's hard to quantify the results meaningfully. I've been curious about the following questions: how much time/effort am I actually saving, what quality am I getting, and what do I get out of using it intellectually. I have a good *feeling* about some aspects but I want to look at evidence for or against my own feelings. What is actually being exchanged?
 
