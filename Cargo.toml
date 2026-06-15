@@ -1,0 +1,14 @@
+[package]
+name = "ble_qwen"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+bluer = { version = "0.17.4", features = ["bluetoothd"] }
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+csv = "1.4.0"
+serde = { version = "1", features = ["derive"] }
+tokio-stream = "0.1"
+chrono = "0.4.45"
