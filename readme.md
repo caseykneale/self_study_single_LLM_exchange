@@ -130,7 +130,7 @@ So we have a final target now, the project can be fully specified, because I wro
    - The results still weren't great.
    - Decisions were made that I didn't have in the code, and they were decisions I considered in my implementation and decided against.
  - The best case result from a fully specified prompt, yielded somewhat sad results. 
-   - There were both losses in requirements, poor code organization
+   - There were both losses in requirements and poor code organization
    - The code felt bloated and yet lacked abstractions that would aid maintenance. 
 
 ## Personal 
