@@ -1,10 +1,10 @@
-# Understanding Tradeoffs in a Single LLM Interaction for Writing Code
+# Tradeoffs in a Single LLM Interactions for Writing Code
 
-Over the past year I have seen an extreme fixation with AI productivity, but I haven't seen compelling experiments related to the trade-offs for having used these tools. Not from professionals anyways. I've been curious about the following questions: how much time/effort am I actually saving, what quality am I getting, and what do I get out of using it intellectually. I have a good *feeling* about some aspects but I want to look at evidence for or against my own feelings. What is actually being exchanged?
+Over the past year I have seen an extreme fixation with AI productivity, but I haven't seen compelling experiments about their trade offs. I think its because it's hard to quantify the results meaningfully. I've been curious about the following questions: how much time/effort am I actually saving, what quality am I getting, and what do I get out of using it intellectually. I have a good *feeling* about some aspects but I want to look at evidence for or against my own feelings. What is actually being exchanged?
 
 To assess that I picked a project that I don't know much about, and in doing so I want to use that as a proxy for what 1 "atomic interaction" with a modern LLM trades in exchange for a prompt. Agentic programming is what many people are talking about these days, this is intentionally **not** that. Agentic programming is a composition of many of these "atomic interactions". I want to understand what is traded in 1 such transaction on a technical but also personal level.
 
-This write up will not be extremely technical. I will not go over every line of code but I will mention wins and losses in the code, the logic, and me as an operator. Code is offered. Curious readers can inspect for themselves and see if they agree with my conclusions or not, if they so wish.
+This write up will not be extremely technical. I will not go over every line of code but I will mention wins and losses in the code, the logic, and me as an operator. Code is offered. Curious readers can inspect for themselves and see if they agree with my conclusions or not.
 
 ## Experiment Setup
 - Aiming for ~200 lines of code outputted.
