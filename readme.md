@@ -61,9 +61,9 @@ I'm familiar enough with DeepSeek's latest model. It's cheap, and in agentic set
 
 ### They Both Failed to 1-shot
 
-There were a lot of issues with both attempts. One that I was saddened by was no that there was no attempt at writing tests. Yes you get what you ask for, but often with LLM's they hand out tests without even being asked. Not a huge deal but, I was curious, will an extremely widely used and well known best practice be given to me for free? The answer this time was "no".
+There were a lot of issues with both attempts. One that I was saddened by was that there was no attempt at writing tests. Yes you get what you ask for, but often with LLM's they hand out tests without even being asked. Not a huge deal but, I was curious, will an extremely widely used and well known best practice be given to me for free? The answer this time was "no".
 
-My biggest gripe with both attempts was that I strongly hinted at a data structure to handle the correlation of bluetooth signals. One person may have multiple devices. A phone, headphones, smartwatch, car, I don't know? I do know that I didn't want to track a single bluetooth signal, I want to track the presence of "someone" or "something" by associating multiple bluetooth signals into a single identity in time. I did more than hint at this in the prompt, I said `This is the real goal, I want to identify vehicles or people by their bluetooth signatures as they frequent a location`. This isn't where the experiment ends. There is still a lot to discuss and learn here.
+My biggest gripe with both attempts was that I strongly hinted at a data structure to handle the correlation of bluetooth signals. One person may have multiple devices. A phone, headphones, smartwatch, car, I don't know? I do know that I didn't want to track a single bluetooth signal, I want to track the presence of "someone" or "something" by associating multiple bluetooth signals into a single identity in time. I did more than hint at this in the prompt, I said `This is the real goal, I want to identify vehicles or people by their bluetooth signatures as they frequent a location`.
 
 
 # Learning by cleaning up the DeepSeek result
@@ -80,12 +80,14 @@ Seeing that the best result missed the point of the application, what might the 
 
 I experimented for maybe 2-3 hrs with ideas for how to correlate devices to entities like people/vehicles. I started with some advanced time series modeling using signal strength aka `RSSI` and was going to have some fun. Then I settled on the thing I think a colleagues first guess would be. Why don't I just group everything I see in a batch as either belonging to a group, or becoming a new group? 
 
-That experimentation involved me writing some data structures, testing with real devices, refactoring and iterating. When I look at the final result of this experimentation, which you can view [here](src/main.rs), I don't see much of the original code at all. Ignoring imports maybe 10 lines out of the now 250 (~4%) still exist. Am I in love with this stopping point for the project? No! If I really cared there is still work to do, there aren't even tests. I don't normally write code like this. However, this is good enough for an interesting follow up experiment.
+That experimentation involved me writing some data structures, testing with real devices, refactoring and iterating. When I look at the final result of this experimentation, which you can view [here](src/main.rs), I don't see much of the original code at all. Ignoring imports maybe 10 lines out of the now 250 (~4%) still exist. 
+
+Am I in love with this stopping point for the project? No! If I really cared there is still work to do, there aren't even tests. I don't normally write code like this. However, this is good enough for an interesting follow up experiment.
 
 # What does an LLM expect in a Prompt?
 Let's pretend an agentic workflow or a person refined the prompt detailing the code over and over until it resulted in the proof of concept code I wrote by hand. I imagine if I added more words to the prompt I could get it close. Thats what people say right? Let's assume that the datastructure in the original prompt was too underspecified to succeed at the main goal and that is what held the attempt back. Let's generously call all of the issues here operator error at the expense of some personal gas lighting and admitting upfront that I didn't know much about the project.
 
-So we have a final target now, the project can be fully specified, because I wrote up the code for the application I invisioned. Can we encode the neccesary items to reproduce this application into a prompt and then get a 1-shot? What if I wrote a really detailed prompt and made sure it used language that LLM's do well with. Could I ask an LLM to recreate something like my code from it. Should work. Right?
+So we have a final target now, the project can be fully specified, because I wrote up the code for the application I envisioned. Can we encode the neccesary items to reproduce this application into a prompt and then get a 1-shot? What if I wrote a really detailed prompt and made sure it used language that LLM's do well with. Could I ask an LLM to recreate something like my code from it. Should work. Right?
 
 ## DeepSeekV4 Pro Constructs Prompt from my Code and Asks Qwen to Generate it
 - [Produced prompt](reconstruction_experiment/deepseek_prompt.md): ~750 words and 80 lines of text
